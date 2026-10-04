@@ -1,104 +1,21 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TERRA | Primera etapa de Ciudad Jardín</title>
-<style>
-:root{--ink:#17211b;--green:#526a57;--soft:#eef1ec;--sand:#d9d0bf;--line:#d9ddd7;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fafbf9}
-nav{position:sticky;top:0;z-index:20;background:rgba(250,251,249,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:17px 5vw}
-.brand{font-weight:800;letter-spacing:.22em}.links{display:flex;gap:20px;flex-wrap:wrap}.links a{font-size:13px;color:var(--ink);text-decoration:none}
-.hero{min-height:78vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;padding:7vw 6vw;background:linear-gradient(135deg,#f7f8f4 0%,#edf1ea 100%)}
-.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:700}.hero h1{font-size:clamp(62px,10vw,145px);line-height:.82;margin:18px 0 24px;letter-spacing:.04em}.hero p{font-size:20px;line-height:1.5;max-width:650px}.hero-card{background:var(--ink);color:white;padding:38px;border-radius:2px}.hero-card .big{font-size:58px;font-weight:800}.hero-card small{opacity:.7}
-section{padding:85px 6vw}.section-head{max-width:760px;margin-bottom:40px}.section-head h2{font-size:44px;margin:0 0 14px}.section-head p{font-size:18px;line-height:1.55;color:#526057}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.metric{background:white;border:1px solid var(--line);padding:28px}.metric b{display:block;font-size:34px;margin-bottom:8px}.metric span{color:#657068}
-.dark{background:var(--ink);color:white}.dark .section-head p{color:#c8d0ca}
-.plan{background:white;padding:18px;border:1px solid var(--line)}.plan img{width:100%;height:auto;display:block}.caption{font-size:13px;color:#68736c;margin-top:12px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:white;border:1px solid var(--line);padding:34px}.card h3{font-size:25px;margin-top:0}.card ul{padding-left:20px;line-height:1.8}
-.price-table{width:100%;border-collapse:collapse;background:white}.price-table th,.price-table td{padding:16px;border-bottom:1px solid var(--line);text-align:left}.price-table th{background:#f0f2ef}
-.sim{display:grid;grid-template-columns:1fr 1fr;gap:30px}.controls,.result{background:white;border:1px solid var(--line);padding:32px}label{display:block;margin:15px 0 6px;font-size:13px;font-weight:700}select,input{width:100%;padding:12px;border:1px solid #cbd1cb;background:white}.result .total{font-size:38px;font-weight:800;margin:15px 0}.muted{color:#68736c;font-size:13px}
-.future{background:#e8ede7}.future-box{border-left:5px solid var(--green);padding:5px 0 5px 25px;max-width:900px}.future-box h2{font-size:44px;margin:0 0 15px}
-footer{padding:35px 6vw;border-top:1px solid var(--line);font-size:13px;color:#69736c}
-@media(max-width:850px){.hero,.two,.sim{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.links{display:none}.hero{min-height:auto}.hero h1{font-size:68px}}
-@media(max-width:520px){.grid4{grid-template-columns:1fr}.hero h1{font-size:54px}}
-</style>
-</head>
-<body>
-<nav><div class="brand">TERRA</div><div class="links">
-<a href="#proyecto">Proyecto</a><a href="#implantacion">Implantación</a><a href="#apartamentos">Apartamentos</a><a href="#precios">Precios</a><a href="#simulador">Simulador</a><a href="#ciudad-jardin">Ciudad Jardín</a>
-</div></nav>
+<!doctype html><html lang='es'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>TERRA | Primera etapa de Ciudad Jardín</title><style>
+:root{--ink:#21312a;--sand:#eee8dc;--paper:#faf9f5;--accent:#7b856c;--line:#d8d3c7}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}nav{position:sticky;top:0;background:rgba(250,249,245,.96);border-bottom:1px solid var(--line);padding:14px 5%;display:flex;justify-content:space-between;align-items:center;z-index:4}.brand{font-weight:800;letter-spacing:.18em}nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}.hero{min-height:78vh;padding:8% 7%;display:grid;grid-template-columns:1.05fr .95fr;gap:5%;align-items:center;background:linear-gradient(135deg,#f7f4ec,#e3e4d8)}h1{font-size:clamp(55px,9vw,120px);margin:0;letter-spacing:.08em;line-height:.85}.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:13px}.hero p{font-size:20px;max-width:650px}.visual{height:480px;border:1px solid #c8c3b7;background:linear-gradient(150deg,#c9cdbd,#f4efe4);display:grid;place-items:center;text-align:center;padding:30px;color:#59645d}.btn{display:inline-block;padding:12px 18px;background:var(--ink);color:white;text-decoration:none;margin-top:15px}section{padding:75px 7%;border-bottom:1px solid var(--line)}h2{font-size:42px;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid var(--line);padding:25px}.metric{font-size:34px;font-weight:700}.two{display:grid;grid-template-columns:1fr 1fr;gap:40px}.placeholder{min-height:340px;background:#e8e5dc;border:1px dashed #9c9b90;display:grid;place-items:center;text-align:center;padding:30px}.prices table{width:100%;border-collapse:collapse;background:white}.prices th,.prices td{padding:14px;border-bottom:1px solid var(--line);text-align:left}.sim{background:#27362f;color:white}.sim .box{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.sim label{font-size:13px}.sim input,.sim select{width:100%;padding:12px;margin-top:5px}.result{font-size:30px;font-weight:bold;margin-top:25px}.future{background:#e5e7dc}footer{padding:35px 7%;font-size:13px}@media(max-width:850px){.hero,.two{grid-template-columns:1fr}.grid,.sim .box{grid-template-columns:1fr 1fr}.visual{height:300px}nav .links{display:none}}@media(max-width:520px){.grid,.sim .box{grid-template-columns:1fr}h2{font-size:34px}}
 
-<header class="hero">
-<div>
-<div class="eyebrow">Santa Rosa de Osos · Antioquia</div>
-<h1>TERRA</h1>
-<p><b>Primera etapa de Ciudad Jardín.</b><br>Un desarrollo residencial planteado para ejecutarse por etapas, con vivienda funcional, parqueaderos integrados y una visión urbana de largo plazo.</p>
-</div>
-<div class="hero-card">
-<small>PRIMERA ETAPA</small><div class="big">40</div><p>apartamentos proyectados</p>
-<hr style="border:0;border-top:1px solid #455149;margin:28px 0">
-<div class="big">65 m²</div><p>tipología base de trabajo</p>
-</div>
-</header>
+.heroimg{background-image:linear-gradient(rgba(20,30,25,.10),rgba(20,30,25,.10)),url('assets/master-ciudad-jardin.png');background-size:cover;background-position:center;min-height:430px}
+.imagecard{background:#fff;border:1px solid var(--line);overflow:hidden}.imagecard img{display:block;width:100%;height:auto}.imagecard small{display:block;padding:12px 14px;color:#59645d;line-height:1.4}
+.vision{padding:75px 7%;background:#f3f2ed}.vision-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:center}.vision img{width:100%;display:block;border:1px solid var(--line)}
+@media(max-width:850px){.vision-grid{grid-template-columns:1fr}.heroimg{min-height:300px}}
+</style></head><body>
+<nav><div class='brand'>TERRA</div><div class='links'><a href='#proyecto'>Proyecto</a><a href='#implantacion'>Implantación</a><a href='#apartamentos'>Apartamentos</a><a href='#precios'>Precios</a><a href='#simulador'>Simulador</a><a href='#ciudad'>Ciudad Jardín</a></div></nav>
+<header class='hero'><div><div class='kicker'>Santa Rosa de Osos · Antioquia</div><h1>TERRA</h1><p><b>Primera etapa de Ciudad Jardín.</b><br>Un proyecto residencial pensado para crecer por etapas, con una propuesta clara: vivienda funcional, entorno verde y una visión urbana de largo plazo.</p><a class='btn' href='#proyecto'>Conocer el proyecto</a></div><div class='visual heroimg'></div></header>
+<section id='proyecto'><div class='kicker'>El proyecto</div><h2>TERRA en cifras</h2><div class='grid'><div class='card'><div class='metric'>40</div>Apartamentos proyectados</div><div class='card'><div class='metric'>65 m²</div>Tipología residencial base</div><div class='card'><div class='metric'>4</div>Niveles residenciales</div><div class='card'><div class='metric'>2</div>Niveles de parqueaderos</div></div><p>TERRA se plantea como la primera etapa concreta del desarrollo Ciudad Jardín. La estrategia permite ejecutar y comercializar el proyecto progresivamente, sin confundir esta etapa con el potencial completo del macroproyecto.</p></section>
+<section id='implantacion'><div class='two'><div><div class='kicker'>Implantación</div><h2>Primero TERRA.<br>Después, Ciudad Jardín.</h2><p>La implantación mostrará accesos, edificios, parqueaderos, circulación y zonas verdes correspondientes exclusivamente a TERRA. El desarrollo futuro se presentará de manera conceptual y diferenciada.</p></div><div class='imagecard'><img src='assets/master-ciudad-jardin.png' alt='Master plan de Ciudad Jardín'><small>Visión general de Ciudad Jardín. TERRA corresponde a la primera etapa del desarrollo.</small></div></div></section>
+<section id='apartamentos'><div class='kicker'>Producto residencial</div><h2>Apartamentos de 65 m²</h2><div class='two'><div class='imagecard'><img src='assets/plano-nivel-1.jpg' alt='Plano arquitectónico de referencia de TERRA'><small>Plano arquitectónico de referencia del proyecto.</small></div><div><h3>Distribución base</h3><p>2 alcobas · 2 baños · sala-comedor · cocina · zona de ropas.</p><h3>Compra flexible</h3><p>El producto principal se comercializa en <b>obra gris</b>. El comprador podrá adicionar un paquete de acabados independiente, permitiendo controlar mejor su inversión inicial.</p><h3>Primera fase</h3><p>La primera fase comercial y constructiva contempla <b>8 apartamentos</b>, equivalentes aproximadamente a 520 m² vendibles.</p></div></div></section>
+<section id='precios' class='prices'><div class='kicker'>Primera fase</div><h2>Precios de referencia</h2><table><thead><tr><th>Grupo</th><th>Unidades</th><th>Apartamento</th><th>Parqueadero*</th></tr></thead><tbody><tr><td>Lanzamiento 01</td><td>2</td><td>$292,5 millones</td><td>$40 millones</td></tr><tr><td>Lanzamiento 02</td><td>2</td><td>$299 millones</td><td>$40 millones</td></tr><tr><td>Lanzamiento 03</td><td>2</td><td>$305,5 millones</td><td>$40 millones</td></tr><tr><td>Lanzamiento 04</td><td>2</td><td>$312 millones</td><td>$40 millones</td></tr></tbody></table><p><small>*Valores de trabajo recuperados del modelo financiero. Deben confirmarse antes de publicar comercialmente.</small></p></section>
+<section id='simulador' class='sim'><div class='kicker'>Herramienta interactiva</div><h2>Simula tu compra</h2><div class='box'><label>Precio apartamento<select id='apt'><option value='292500000'>$292,5 M</option><option value='299000000'>$299 M</option><option value='305500000'>$305,5 M</option><option value='312000000'>$312 M</option></select></label><label>Parqueadero<select id='park'><option value='40000000'>Sí · $40 M</option><option value='0'>No</option></select></label><label>Acabados<select id='finish'><option value='0'>Obra gris</option><option value='58000000'>Agregar · $58 M</option></select></label><label>Cuota inicial %<input id='down' type='number' min='0' max='100' value='30'></label></div><div class='result' id='out'></div><p id='balance'></p></section>
+<section id='ciudad' class='future'><div class='two'><div><div class='kicker'>Visión futura</div><h2>Ciudad Jardín</h2><p>TERRA es la primera pieza de una visión urbana de mayor escala. El conjunto de predios considerado para Ciudad Jardín suma aproximadamente <b>78.587 m²</b>. Las futuras etapas se mostrarán como visión conceptual y no como oferta comercial definitiva.</p><p>Esta separación permite vender un producto concreto hoy sin comprometer diseños, densidades o características de etapas que todavía pueden evolucionar.</p></div><div class='placeholder'><b>MASTER PLAN CIUDAD JARDÍN</b><br>TERRA resaltada + desarrollo futuro en segundo plano.</div></div></section>
 
-<section id="proyecto">
-<div class="section-head"><h2>TERRA, primero.</h2><p>La presentación se concentra en TERRA como producto concreto. Ciudad Jardín aparece como el desarrollo mayor del cual TERRA constituye la primera etapa.</p></div>
-<div class="grid4">
-<div class="metric"><b>6</b><span>niveles totales</span></div>
-<div class="metric"><b>2</b><span>niveles de parqueaderos</span></div>
-<div class="metric"><b>4</b><span>niveles residenciales</span></div>
-<div class="metric"><b>8</b><span>apartamentos en la primera fase</span></div>
-</div>
-</section>
-
-<section id="implantacion" class="dark">
-<div class="section-head"><h2>Base arquitectónica</h2><p>Se incorpora ya el plano arquitectónico disponible del proyecto, sustituyendo el marcador gris de la versión inicial.</p></div>
-<div class="plan"><img src="assets/plano-nivel-1.jpg" alt="Plano arquitectónico base Ciudad Jardín / TERRA"></div>
-<div class="caption" style="color:#c8d0ca">Plano arquitectónico base disponible. La implantación específica definitiva de TERRA se actualizará cuando se consolide la versión ejecutiva.</div>
-</section>
-
-<section id="apartamentos">
-<div class="section-head"><h2>Vivienda funcional</h2><p>La tipología comercial de trabajo es de aproximadamente 65 m². La estrategia es entregar el apartamento en obra gris y permitir que el comprador adquiera el paquete de acabados por separado.</p></div>
-<div class="two">
-<div class="card"><h3>Tipología base</h3><ul><li>Área aproximada: 65 m²</li><li>2 alcobas</li><li>2 baños</li><li>Sala–comedor</li><li>Cocina</li><li>Zona de ropas</li></ul></div>
-<div class="card"><h3>Modelo de entrega</h3><ul><li>Apartamento: obra gris</li><li>Acabados: paquete opcional</li><li>Parqueadero: componente separado</li><li>Construcción y comercialización por fases</li></ul></div>
-</div>
-</section>
-
-<section id="precios" style="background:#f0f2ef">
-<div class="section-head"><h2>Primera fase comercial</h2><p>Escenario de trabajo para los primeros ocho apartamentos. Estos valores deben tratarse como base financiera del proyecto hasta su aprobación comercial definitiva.</p></div>
-<table class="price-table">
-<tr><th>Grupo</th><th>Unidades</th><th>Precio apartamento</th><th>Parqueadero</th></tr>
-<tr><td>01</td><td>2</td><td>$292,5 millones</td><td>$40 millones</td></tr>
-<tr><td>02</td><td>2</td><td>$299 millones</td><td>$40 millones</td></tr>
-<tr><td>03</td><td>2</td><td>$305,5 millones</td><td>$40 millones</td></tr>
-<tr><td>04</td><td>2</td><td>$312 millones</td><td>$40 millones</td></tr>
-</table>
-<p class="muted">Paquete opcional de acabados usado en el escenario financiero: $58 millones por apartamento.</p>
-</section>
-
-<section id="simulador">
-<div class="section-head"><h2>Simulador</h2><p>Herramienta preliminar para visualizar el valor total y la estructura básica de pago.</p></div>
-<div class="sim">
-<div class="controls">
-<label>Precio del apartamento</label><select id="apt"><option value="292500000">$292,5 M</option><option value="299000000">$299 M</option><option value="305500000">$305,5 M</option><option value="312000000">$312 M</option></select>
-<label>Parqueadero</label><select id="park"><option value="40000000">Sí · $40 M</option><option value="0">No</option></select>
-<label>Acabados</label><select id="finish"><option value="0">No incluir</option><option value="58000000">Incluir · $58 M</option></select>
-<label>Cuota inicial (%)</label><input id="down" type="number" min="0" max="100" value="30">
-</div>
-<div class="result"><div class="muted">VALOR TOTAL</div><div class="total" id="total">$0</div><p>Cuota inicial: <b id="initial">$0</b></p><p>Saldo: <b id="balance">$0</b></p><p class="muted">Simulación informativa. No constituye oferta comercial.</p></div>
-</div>
-</section>
-
-<section id="ciudad-jardin" class="future">
-<div class="future-box"><div class="eyebrow">Visión de largo plazo</div><h2>TERRA es el comienzo de Ciudad Jardín.</h2><p>La estrategia de comunicación separa el producto ejecutable de hoy del potencial futuro del macroproyecto. Esto permite vender TERRA con claridad sin presentar como definitivas las etapas posteriores de Ciudad Jardín.</p></div>
-</section>
-
-<footer>TERRA · Primera etapa de Ciudad Jardín · Santa Rosa de Osos · Versión 2 de trabajo</footer>
-<script>
-const money=n=>new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(n);
-function calc(){let t=+apt.value + +park.value + +finish.value; let d=Math.max(0,Math.min(100,+down.value||0))/100; total.textContent=money(t);initial.textContent=money(t*d);balance.textContent=money(t*(1-d));}
-document.querySelectorAll('select,input').forEach(x=>x.addEventListener('input',calc));calc();
-</script>
+<section id='vision' class='vision'><div class='vision-grid'><div><img src='assets/ciudad-jardin-01.jpg' alt='Plano general de Ciudad Jardín'></div><div><div class='kicker'>Visión de largo plazo</div><h2>Ciudad Jardín</h2><p>TERRA es la primera etapa de un desarrollo urbano de mayor alcance. Esta imagen se presenta como contexto conceptual del macroproyecto y no como oferta simultánea de todas sus etapas.</p><p><b>La prioridad comercial actual es TERRA.</b> Ciudad Jardín explica el entorno, la escala y la visión futura.</p></div></div></section>
+<footer><b>TERRA · Primera etapa de Ciudad Jardín</b><br>Prototipo de trabajo. Cifras y especificaciones sujetas a consolidación técnica, jurídica y comercial.</footer>
+<script>function money(v){return new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(v)}function calc(){let total=+apt.value + +park.value + +finish.value;let initial=total*(+down.value/100);out.textContent='Valor total: '+money(total);balance.textContent='Cuota inicial: '+money(initial)+' · Saldo: '+money(total-initial)}document.querySelectorAll('select,input').forEach(x=>x.addEventListener('input',calc));calc();</script>
 </body></html>
